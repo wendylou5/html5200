@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">Home</a></li>
+				<li> <a href="#">Gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+      <h2>Welcome to the Internet Book Club</h2>
+        <p>If you want to connect with the community and post content, please create an account. The following is a form to sign up.</p>
+        <p>*indicates a required field</p>
+        <p>more content</p>
+		
+      <!-- A Simple Form    -->
+      
+      <form id="sign-up-form" method="post" action="#">
+        <fieldset>
+          <h2>Create an Account</h2>
+          <ul>
+            
+            <li>
+              <label id="username">*Username</label>
+              <input type="text" name="username" id="username" placeholder="Username" autofocus, required />
+            </li>
+            
+            <li>
+              <label id="password">*Password</label>
+              <input type="password" name="psw" id="password" placeholder="Password" required />
+            </li>
+            
+            <li>
+              <label>*Email</label>
+              <input type="email" name="email" required placeholder="Enter a valid email address" />   
+            </li>
+            
+            <li>
+              <label id="f-name-label">*First Name</label>
+              <input type="text" name="first-name" id="f-name-label" placeholder="First Name" required />
+            </li>
+            
+            <li>
+              <label id="l-name-label">*Last Name</label>
+              <input type="text" name="last-name" id="l-name-label" placeholder="Last Name" required />
+            </li>
+            
+            <li>
+              <label>*Date of Birth Year</label>
+              <select required name="year">
+                <option value="1970">1970</option>
+                <option value="1971">1971</option>
+                <option value="1972">1972</option>
+                <option value="1973">1973</option>
+                <option value="1974">1974</option>
+                <option value="1975">1975</option>              
+              </select>
+            </li>
+            
+            <li>
+              <label>*Zip Code</label>
+              <input type="number" placeholder="90210" pattern="^[0-9]{5}" required />               </li>
+            
+            <li>
+              <label>*Average Number of Books You Read Per Year</label>
+              <select required name="books">
+                <option value="1-10">1-10</option>
+                <option value="10-25">10-25</option>
+                <option value="25-50">25-50</option>
+                <option value="50-75">50-75</option>
+                <option value="75-100">75-100</option>
+                <option value="100-150">100-150</option> 
+                <option value="150-200">150-200</option> 
+                <option value="200-300">200-300</option>
+                <option value="300">More than 300 per year</option> 
+              </select> 
+            </li>
+            
+            <li>
+              <label id="genre">Favorite Genres (check all that apply)</label><br>  
+              <input type="checkbox" name="literaryfiction" value="literaryfiction"> Literary Fiction
+              <input type="checkbox" name="nonfiction" value="nonfiction">Nonfiction
+              <input type="checkbox" name="fantasy" value="fantasy"> Fantasy
+              <input type="checkbox" name="sciencefiction" value="sciencefiction">Science Fiction
+              <input type="checkbox" name="mysterythriller" value="mysterythriller"> Mystery and Thriller
+              <input type="checkbox" name="romance" value="romance">Romance
+            </li>
+            
+            <li>Favorite website for buying books:
+              <input type="url" name="website" required pattern="https?://.+">
+            </li>
+            
+            <li>
+              Tell us more about yourself:<br>
+              <input type="text" name="message" size="50" minlength="25" maxlength="250" required placeholder="About you and your reading preferences">
+            </li>
+                         
+            <li>
+              <label>Donate to Support This Website</label>
+              $<input type="number" value="100" 
+              min="1" max="101" placeholder="100" />   
+            </li>          
+            
+          </ul>
+          <input type="submit" value="Sign Up" name="submit" />
+
+        </fieldset>
+             
+      </form>
+              
+            	
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+			
+		</footer>
+
+	</body>
+</html>
