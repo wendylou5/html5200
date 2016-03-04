@@ -45,7 +45,15 @@ header {
   -o-background-size: cover;
   background-size: cover;
 }
-header h1 {margin: 0; font-size:2.5em; font-weight:bolder; padding:30px 0px 20px 30px; width: 350px; color:#a7c520; }
+header h1 {
+  margin: 0;
+  font-size:2.5em;
+  font-weight:bolder;
+  line-height: 1.5em;
+  padding:30px 0px 20px 30px;
+  width: 350px;
+  color:#a7c520;
+}
 
 nav{
 /*  width: 100%;*/
